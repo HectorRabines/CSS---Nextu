@@ -1,0 +1,400 @@
+body
+{
+    background: black;
+}
+
+@font-face
+{
+    font-family: 'Dancing Script';
+    src: url('Dancing Script.ttf');
+}
+*
+{
+    font-family: 'Dancing Script';
+}
+#cabecera
+{
+    width: 900px;
+    height: 80px;
+    padding: 10px;
+    margin: 0 auto;
+    background:  #5b7989;
+    border-radius: 10px;
+    color: white;
+}
+#titulo
+{
+    float: left;
+    text-shadow: 2px #02010a;
+}
+#titulo > h1
+{
+    margin-left: 0px;
+    padding: 0px;
+  
+}
+#navegacion 
+{
+    float: right;
+}
+#navegacion > ul
+{
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    list-style: none;
+    overflow: hidden; 
+}
+
+#navegacion > ul > li > a
+{
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+
+}
+#navegacion > ul > li
+{
+    float: left;
+
+}
+
+#cuerpo
+{
+    background-color:#d5c75f;
+    width: 900px;
+    height: 430px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#arriba > div
+{
+    padding: auto;
+    margin: 10px 23px;
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+#arriba > div > img
+{   
+    margin: auto;
+    width: 250px;
+    height: 200px;  
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+#abajo > div
+{
+    padding: auto;
+    margin: auto 23px;
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+#abajo > div > img
+{   
+    margin: auto;
+    width: 250px;
+    height: 200px; 
+    border-radius: 10px;
+    box-shadow: 5px 5px black; 
+}
+#img1
+{
+    filter: blur(10px);
+}
+#img2, #img4, #img6
+{
+    filter: grayscale(100%);
+}
+#img3
+{
+    filter: sepia(90%)
+}
+
+#pie 
+{
+    background-color: #C6d5c5;
+    width: 900px;
+    height: 170px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+   
+}
+
+#pie #ContenedorPie > div
+{
+    text-align: left;
+    padding: auto;
+    margin: 1px 4.5px;
+    width: 24%;
+    float: left;
+ 
+}
+#pie div h1
+{
+    margin: 0px;
+}
+#pie #ContenedorPie > div > p 
+{
+    text-decoration: none;
+    text-align: left;
+    margin: 0px 0px;
+}
+#pie #ContenedorPie > div > p > img
+{
+   width: 30px;
+   height: 15px;
+   margin: 2px 3px;
+}
+
+#contenedor
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#contenedor 
+{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+@media (max-width:600px)
+{
+    #cabecera
+    {
+        width: 210px;   
+    }
+    #titulo > h1
+    {
+        margin: 15px 20px;
+        font-size: 16px;  
+    }
+    #navegacion 
+    {
+        width: 100%;
+        margin: -25px -10px;
+    }
+    #navegacion > ul
+    {
+        float: left;
+        margin: auto;
+        padding: auto;
+        list-style: none;
+        overflow: hidden; 
+    }
+    
+    #navegacion > ul > li > a
+    {
+        text-align: center;
+        padding: auto;
+        text-decoration: none;
+        color: white;
+    
+    }
+    #navegacion > ul > li
+    {
+        float: left;
+    
+    }
+
+
+    #cuerpo
+    {
+
+        width: 210px;
+        height: 790px;
+     
+    }
+    
+    #arriba > div
+    {
+        padding: auto;
+        margin: 15px auto;
+        width: 200px;
+        height: 120px;
+
+    }
+    #arriba > div > img
+    {   
+        margin: -10px auto;
+        width: 200px;
+        height: 100px;  
+   
+    }
+    #abajo > div
+    {
+        padding: auto;
+        margin: auto auto;
+        width: 200px;
+        height: 120px;
+    }
+    #abajo > div > img
+    {   
+        margin: -10px auto;
+        width: 200px;
+        height: 100px; 
+    }
+
+    #pie 
+    {
+        width: 210px;
+        height: 420px;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    #pie #ContenedorPie > div
+    {
+        padding: auto;
+        margin: 5px 25px;
+        width: 200px; 
+
+    }
+    #pie div h1
+    {
+        font-size: 16px;
+    }
+    #pie #ContenedorPie > div > p 
+    {
+        text-decoration: none;
+        font-size: 16px;
+        text-align: left;
+        margin: 0px 0px;
+    }
+    #pie #ContenedorPie > div > p > img
+    {
+        width: 20px;
+        height: 15px;
+        margin: 2px 3px;
+    }
+
+}       
+
+
+
+@media (min-width:601px) and (max-width:800px)
+{
+    #cabecera
+    {
+        width: 500px;   
+        height: 50px;
+    }
+    #titulo > h1
+    {
+        font-size: 20px;  
+        margin-bottom: 2px;
+    }
+    #navegacion 
+    {
+        width: 100%;
+        float: right;
+    }
+    #navegacion > ul
+    {
+        float: right;
+        margin-top: -40px;
+        margin-right: -20px;
+        padding: auto;
+        list-style: none;
+        overflow: hidden; 
+    }
+    
+    #navegacion > ul > li > a
+    {
+        text-align: center;
+        padding: auto;
+        text-decoration: none;
+        color: white;
+    
+    }
+    #navegacion > ul > li
+    {
+        float: left;
+    
+    }
+
+
+    #cuerpo
+    {
+
+        width: 500px;
+        height: 570px; 
+    }
+    
+    #arriba > div
+    {
+        padding: auto;
+        margin: 15px 20px;
+        width: 200px;
+        height: 150px;
+
+    }
+    #arriba > div > img
+    {   
+        margin: 10px auto;
+        width: 200px;
+        height: 150px;  
+   
+    }
+    #abajo > div
+    {
+        padding: auto;
+        margin: 15px 20px;
+        width: 200px;
+        height: 150px;
+    }
+    #abajo > div > img
+    {   
+        margin: 10px auto;
+        width: 200px;
+        height: 150px; 
+    }
+
+
+    #pie 
+    {
+        width: 500px;
+        height: 220px;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    #pie #ContenedorPie > div
+    {
+        padding: auto;
+        margin: 5px 1px;
+        width: 120px; 
+        float: left;
+    }
+    #pie div h1
+    {
+        font-size: 16px;
+    }
+    #pie #ContenedorPie > div > p 
+    {
+        text-decoration: none;
+        font-size: 12px;
+        text-align: left;
+        margin: 0px 0px;
+    }
+    #pie #ContenedorPie > div > p > img
+    {
+        width: 30px;
+        height: 20px;
+        margin: 2px 3px;
+    }
+
+        
+}
+
